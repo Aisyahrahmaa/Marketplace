@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import { View, Text, Image, Dimensions, StyleSheet, StatusBar} from 'react-native'
 import imgBanner from './source/assets/images/awan.jpg'
 import OvoComponent from './source/component/OvoComponent'
+import FiturUtama from './source/component/FiturUtama'
 
 const {height, width} = Dimensions.get('window')
 const style = StyleSheet.create({
@@ -15,9 +16,7 @@ const style = StyleSheet.create({
     alignSelf: 'center',
     top: 30,
     color: '#383838'
-
   },
-
   wrapperOvo:{
     marginHorizontal:18,
     height: 140,
@@ -26,19 +25,24 @@ const style = StyleSheet.create({
     elevation: 4,
     borderRadius: 10,
   },
-
-  textOvo:{
+  textOvo: {
     flexDirection:'row',
     justifyContent:'space-between',
     marginHorizontal: 12,
     marginTop: 10,
   },
-
-  garisDiOvo:{
+  garisDiOvo: {
     height: .8,
     backgroundColor: '#adadad',
     marginTop: 10,
   },
+  divider: {
+    width: 'width',
+    height: 15,
+    backgroundColor: '#ededed',
+    marginVertical:15,
+
+  }
 
 })
 
@@ -56,7 +60,13 @@ class Home extends Component{
           </View>
           <View style={style.garisDiOvo}></View>
           <OvoComponent />
+          
+          
         </View>
+        <View style={{marginHorizontal:18,}}>
+            <FiturUtama />
+        </View>
+        <View style={style.divider}></View>
       </View>
     )
   }

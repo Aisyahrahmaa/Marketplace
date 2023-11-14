@@ -11,7 +11,7 @@ const style = StyleSheet.create({
         width: 40,
         marginTop: 17,
         marginHorizontal: 30,
-    }
+    },
 })
 const OvoComponent = () => {
     return (
